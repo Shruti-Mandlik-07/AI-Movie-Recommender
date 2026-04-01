@@ -12,7 +12,7 @@ movies['overview'] = movies['overview'].fillna('')
 movies['tags'] = movies['overview']
 
 # vectorization
-cv = CountVectorizer(max_features=5000, stop_words='english')
+cv = CountVectorizer(max_features=1000, stop_words='english')
 vectors = cv.fit_transform(movies['tags']).toarray()
 
 # similarity
