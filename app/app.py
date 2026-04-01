@@ -11,7 +11,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 movies_path = os.path.join(BASE_DIR, 'model', 'movies.pkl')
 
 movies = pickle.load(open(movies_path, 'rb'))
-similarity = pickle.load(open('../model/similarity.pkl', 'rb'))
+
 
 # recommendation function
 def fetch_poster(movie_id):
